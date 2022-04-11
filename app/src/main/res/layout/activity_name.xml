@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_back_1"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/only_text"
+        android:layout_width="400sp"
+        android:layout_height="150sp"
+        android:layout_alignBottom="@+id/speech_image"
+        android:layout_marginBottom="-211dp"
+        android:padding="20dp"
+        android:shadowColor="@color/black"
+        android:text=" Task 2\n Speak Your Name As \n My Name is Nihal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="400sp"
+        android:layout_height="100sp"
+        android:layout_above="@+id/only_text"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="19dp"
+        android:text="Speech Recognition System"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="370sp"
+        android:layout_height="75sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="215sp"
+        android:background="@android:color/transparent"
+        android:hint="Tap Mic to Speak"
+        android:padding="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/speech_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_baseline_mic_24"
+        android:backgroundTint="@color/black"
+        android:outlineAmbientShadowColor="@color/black" />
+
+</RelativeLayout>
